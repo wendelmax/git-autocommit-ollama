@@ -1,0 +1,56 @@
+# Git Auto Commit com Ollama - Windows
+
+Este script automatiza commits no Git, utilizando o Ollama para gerar uma mensagem descritiva e concisa. Este guia fornece as instruções para configurar e usar o script no Windows.
+
+## Pré-requisitos
+
+1. **Git**: Verifique se o Git está instalado.
+2. **Ollama**: Instale e configure o Ollama.
+
+### Instalação do Ollama
+
+1. Baixe o Ollama no [site oficial](https://ollama.com/).
+2. Siga as instruções de instalação para Windows.
+3. Verifique a instalação:
+
+   ```powershell
+   ollama --version
+   ```
+
+## Configuração
+
+1. Crie uma pasta para armazenar o script, como `C:\git-autocommit\`.
+
+2. Salve o script em `C:\git-autocommit\git_autocommit_ollama.ps1`:
+
+3. Abra o PowerShell como administrador e adicione um alias para o script:
+
+   ```powershell
+   notepad $PROFILE
+   ```
+
+   Adicione esta linha no arquivo de perfil:
+
+   ```powershell
+   Set-Alias git-autocommit "C:\git-autocommit\git_autocommit_ollama.ps1"
+   ```
+
+4. Salve o arquivo e recarregue o perfil:
+
+   ```powershell
+   . $PROFILE
+   ```
+
+## Uso
+
+1. Para um commit simples:
+
+   ```powershell
+   git-autocommit
+   ```
+
+2. Para incluir uma tag no commit:
+
+   ```powershell
+   git-autocommit --tag "[Projeto1][Task1]"
+   ```

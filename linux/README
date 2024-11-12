@@ -1,0 +1,71 @@
+# Git Auto Commit com Ollama - Linux
+
+Este script facilita o processo de criação de commits no Git, utilizando o serviço Ollama para gerar automaticamente uma mensagem descritiva e concisa. 
+
+## Pré-requisitos
+
+1. **Git**: Verifique se o Git está instalado.
+2. **Ollama**: Instale e configure o Ollama (instruções abaixo).
+3. **jq**: Necessário para processar JSON.
+
+### Instalação do Ollama
+
+1. Baixe o Ollama no [site oficial](https://ollama.com/).
+2. Siga as instruções para a instalação no Linux.
+3. Verifique a instalação:
+
+   ```bash
+   ollama --version
+   ```
+
+### Instalando `jq`
+
+No Linux, instale o `jq` com o comando:
+
+```bash
+sudo apt install jq
+```
+
+## Configuração
+
+1. Crie uma pasta oculta para o script:
+
+   ```bash
+   mkdir -p ~/.git-autocommit
+   ```
+
+2. Salve o script em `~/.git-autocommit/git_autocommit_ollama.sh`:
+   
+3. Torne o script executável:
+
+   ```bash
+   chmod +x ~/.git-autocommit/git_autocommit_ollama.sh
+   ```
+
+4. Crie um alias para o comando:
+
+   Edite `~/.bashrc` ou `~/.zshrc`:
+
+   ```bash
+   alias git-autocommit="~/.git-autocommit/git_autocommit_ollama.sh"
+   ```
+
+5. Recarregue o shell:
+
+   ```bash
+   source ~/.bashrc  # ou source ~/.zshrc
+   ```
+
+## Uso
+
+1. Para um commit simples:
+
+   ```bash
+   git-autocommit
+   ```
+
+2. Para incluir uma tag no commit:
+
+   ```bash
+   git-autocommit --tag "[Projeto1][Task1]"
+   ```
