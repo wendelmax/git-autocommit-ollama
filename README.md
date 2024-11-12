@@ -1,7 +1,3 @@
-Aqui está o README principal atualizado, agora com links para os arquivos `README.md` dentro das pastas específicas para **Linux** e **Windows**.
-
----
-
 # Git Auto Commit com Ollama
 
 Este projeto oferece um script para automatizar o processo de criação de uma mensagem de commit no Git, utilizando o serviço Ollama para gerar uma descrição concisa e informativa das mudanças no código. O repositório está organizado com scripts separados para **Linux** e **Windows**, permitindo fácil configuração em ambos os sistemas operacionais.
