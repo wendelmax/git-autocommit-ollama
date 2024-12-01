@@ -129,9 +129,3 @@ git-autocommit-ollama/
 ## Licença
 
 Distribuído sob a Licença MIT. Veja `LICENSE` para mais informações.
-
-## Contato
-
-Seu Nome - [@seu_twitter](https://twitter.com/seu_twitter)
-
-Link do Projeto: [https://github.com/seu-usuario/git-autocommit-ollama](https://github.com/seu-usuario/git-autocommit-ollama)
