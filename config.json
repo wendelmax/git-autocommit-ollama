@@ -1,0 +1,23 @@
+{
+  "ollama": {
+    "url": "http://localhost:11411",
+    "model": "llama2",
+    "timeout": 30,
+    "daemon_mode": false
+  },
+  "commit": {
+    "language": "pt",
+    "conventional_commits": true,
+    "types": ["feat", "fix", "docs", "style", "refactor", "test", "chore"],
+    "preview_before_commit": true,
+    "allow_edit": true
+  },
+  "default_tags": {
+    "project1": "[PROJ1]",
+    "project2": "[PROJ2]"
+  },
+  "prompts": {
+    "pt": "Baseado no seguinte resultado do git status, gere uma mensagem de commit concisa e direta no formato conventional commits (ex: feat: mensagem ou fix: mensagem):\n",
+    "en": "Based on the following git status result, generate a concise and direct commit message using conventional commits format (e.g. feat: message or fix: message):\n"
+  }
+}
